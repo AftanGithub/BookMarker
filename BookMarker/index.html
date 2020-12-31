@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMarker</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1  id="show-modal"><i class="fas fa-plus-circle"></i> Add BookMark</h1>
+
+    <div class="container" id="bookmarks-container">
+        <div class="item">
+            <div class="item-container">
+                <img src="https://s2.googleusercontent.com/s2/favicons?domain=www.youtube.com" alt="favicon" >
+                <a href="https://www.youtube.com/" target="_blank" id="bookmark-link">Youtube</a>
+            </div>
+            
+        </div>
+        <span id="split-delete"><i class="fas fa-trash-alt"></i></span>
+        
+    </div>
+
+
+    <!--Modal-->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <i class="fas fa-window-close" id="close-icon"></i>
+            <div class="modal-header">
+                <h3>Add Bookmark</h3>
+            </div>
+            <div class="modal-content">
+                <form id="bookmark-form">
+                    <!--website name-->
+                    <div class="form-group">
+                        <label for="website-name" class="form-label">Website Name</label>
+                        <input type="text" id="website-name" class="form-input" autofocus>
+                    </div>
+
+                     <!--website URL-->
+                     <div class="form-group">
+                        <label for="website-url" class="form-label">Website URL</label>
+                        <input type="text" id="website-url" class="form-input">
+                    </div>
+
+                    <button id="save-button" class="save-btn">Save</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+       
+    
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
